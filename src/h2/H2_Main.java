@@ -21,7 +21,7 @@ public class H2_Main {
                 return hor;
             }
             else{
-                int x;
+
             }
 
         }

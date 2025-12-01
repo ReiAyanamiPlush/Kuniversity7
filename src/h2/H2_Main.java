@@ -1,32 +1,50 @@
 package h2;
 
+import java.util.Arrays;
+
 public class H2_Main {
 
     public static void main(String[] args) {
 
-
+        change(new int[]{2, 7, 1, 9}, new int[]{5, 6, 7}, 2, 4);
+        change(new int[]{2, 7, 1, 9}, new int[]{2, 7, 1, 9}, 2, 4);
+        change(new int[]{2, 7, 1, 9}, new int[]{2, 7, 1, 9}, 3, 2);
 
     }
 
-    public static int[] subuwu(int[] a, int[] b, int start, int end){
+    public static int[] change(int[] a, int[] b, int start, int end) {
 
-        if (end>start){
+        if (end > start) {
 
-            if (a!=b){
+            if (Arrays.compare(a, b) != 0) {
                 int[] hor = new int[a.length];
 
-                for(int i=0; i<a.length-1; i++){
+                for (int i = 0; i < a.length; i++) {
                     hor[i] = a[i];
                 }
+                System.out.println(Arrays.toString(hor));
                 return hor;
-            }
-            else{
+
+            } else {
+
+                Arrays.sort(a);
+
+                int[] glorbyoinsky = Arrays.copyOfRange(a, start, end);
+
+                System.out.println(Arrays.toString(glorbyoinsky));
+                return glorbyoinsky;
+
 
             }
+
+        } else {
+
+            System.out.println("nö");
+            return new int[0];
 
         }
 
-        return new int[0];
+
     }
 
 }

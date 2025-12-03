@@ -2,7 +2,7 @@ package h3;
 
 public class Mensch {
 
-    int jahr = 2025;
+    private int jahr = 2025;
 
     String name;
     int gebJahr;

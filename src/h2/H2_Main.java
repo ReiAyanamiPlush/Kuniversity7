@@ -6,9 +6,9 @@ public class H2_Main {
 
     public static void main(String[] args) {
 
-        change(new int[]{2, 7, 1, 9}, new int[]{5, 6, 7}, 2, 4);
-        change(new int[]{2, 7, 1, 9}, new int[]{2, 7, 1, 9}, 2, 4);
-        change(new int[]{2, 7, 1, 9}, new int[]{2, 7, 1, 9}, 3, 2);
+        change(new int[]{2, 7, 1, 9}, new int[]{5, 6, 7}, 2, 4);        //should be [2, 7, 1, 9]
+        change(new int[]{2, 7, 1, 9}, new int[]{2, 7, 1, 9}, 2, 4);     //should be [7, 9]
+        change(new int[]{2, 7, 1, 9}, new int[]{2, 7, 1, 9}, 3, 2);     //should be [] aka "nö"
 
     }
 

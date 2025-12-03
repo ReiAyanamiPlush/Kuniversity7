@@ -8,23 +8,27 @@ public class Mensch {
     int gebJahr;
     int alter;
 
-    public void setName(String a){
-        name=a;
-    }
-    public void setGebJahr(int a){
-        gebJahr=a;
-    }
-    public void setAlter(){
-        alter=jahr-gebJahr;
+    public void setName(String a) {
+        name = a;
     }
 
-    public String getName(){
+    public void setGebJahr(int a) {
+        gebJahr = a;
+    }
+
+    public void setAlter() {
+        alter = jahr - gebJahr;
+    }
+
+    public String getName() {
         return name;
     }
-    public int getGebJahr(){
+
+    public int getGebJahr() {
         return gebJahr;
     }
-    public int getAlter(){
+
+    public int getAlter() {
         return alter;
     }
 
